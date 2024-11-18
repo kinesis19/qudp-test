@@ -40,3 +40,29 @@ void QNode::run()
   rclcpp::shutdown();
   Q_EMIT rosShutDown();
 }
+
+void QNode::setupSocket() {
+  udpSocket->bind(QHostAddress::Any, receiverPort);
+
+  connect(udpSocket, &QUdpSocket::readyRead, this, [this]() {
+    while (udpSocket->hasPendingDatagrams()) {
+      QByteArray buffer;
+      buffer.resize(udpSocket->pendingDatagramSize());
+      QHostAddress sender;
+      quint16 senderPort;
+
+      udpSocket->readDatagram(buffer.data(), buffer.size(), &sender, &senderPort);
+      QString receivedMessage = QString::fromUtf8(buffer);
+      emit messageReceived(receivedMessage);
+    }
+  });
+}
+
+void QNode::setReceiverIPAddress(const std::string& ipAddress) {
+  receiverAddress = QHostAddress(QString::fromStdString(ipAddress));
+}
+
+void QNode::sendUDPMessage(const std::string& message) {
+  QByteArray data = QByteArray::fromStdString(message);
+  udpSocket->writeDatagram(data, receiverAddress, receiverPort);
+}

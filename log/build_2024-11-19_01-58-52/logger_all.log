@@ -1,0 +1,132 @@
+[0.144s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'udp_connection']
+[0.144s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['udp_connection'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7e3827be75e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7e3827de5090>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7e3827de5090>>, mixin_verb=('build',))
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.272s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kinesis/Github/qudp-test'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(udp_connection) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(udp_connection) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(udp_connection) by extension 'ignore_ament_install'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(udp_connection) by extensions ['colcon_pkg']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(udp_connection) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(udp_connection) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(udp_connection) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(udp_connection) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(udp_connection) by extension 'ros'
+[0.279s] DEBUG:colcon.colcon_core.package_identification:Package 'udp_connection' with type 'ros.ament_cmake' and name 'udp_connection'
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.294s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.294s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.295s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/kinesis/Github/qudp-test/install/udp_connection' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.295s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/kinesis/Github/qudp-test/install/udp_connection' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.295s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/kinesis/Github/qudp-test/install
+[0.296s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 19 installed packages in /home/kinesis/colcon_ws/install
+[0.296s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 334 installed packages in /opt/ros/humble
+[0.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'udp_connection' build argument 'cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'udp_connection' build argument 'cmake_target' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'udp_connection' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'udp_connection' build argument 'cmake_clean_cache' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'udp_connection' build argument 'cmake_clean_first' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'udp_connection' build argument 'cmake_force_configure' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'udp_connection' build argument 'ament_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'udp_connection' build argument 'catkin_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'udp_connection' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.316s] DEBUG:colcon.colcon_core.verb:Building package 'udp_connection' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kinesis/Github/qudp-test/build/udp_connection', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kinesis/Github/qudp-test/install/udp_connection', 'merge_install': False, 'path': '/home/kinesis/Github/qudp-test/udp_connection', 'symlink_install': False, 'test_result_base': None}
+[0.316s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.317s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.317s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kinesis/Github/qudp-test/udp_connection' with build type 'ament_cmake'
+[0.317s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kinesis/Github/qudp-test/udp_connection'
+[0.318s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.318s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.318s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kinesis/Github/qudp-test/build/udp_connection': CMAKE_PREFIX_PATH=/home/kinesis/Github/qudp-test/install/udp_connection:/home/kinesis/colcon_ws/install/vision_test:/home/kinesis/colcon_ws/install/usb_camera:/home/kinesis/colcon_ws/install/turtlebot3_status_manager:/home/kinesis/colcon_ws/install/turtlebot3_simulations:/home/kinesis/colcon_ws/install/turtlebot3_fake_node:/home/kinesis/colcon_ws/install/turtlebot3_msgs:/home/kinesis/colcon_ws/install/turtlebot3_gazebo:/home/kinesis/colcon_ws/install/serial_test:/opt/ros/humble:/home/kinesis/colcon_ws/install/yolo_segmentation:/home/kinesis/colcon_ws/install/yolo_detection:/home/kinesis/colcon_ws/install/video_to_ros2_topic:/home/kinesis/colcon_ws/install/image_to_ros2_topic:/home/kinesis/colcon_ws/install/serial:/home/kinesis/colcon_ws/install/ros2_day_4_parameter_practice:/home/kinesis/colcon_ws/install/pan_tilt_camera:/home/kinesis/colcon_ws/install/my_cpp_pkg_test:/home/kinesis/colcon_ws/install/my_cpp_pkg:/home/kinesis/colcon_ws/install/image_recognition_msgs:/home/kinesis/colcon_ws/install/dual_fisheye_camera /usr/bin/cmake /home/kinesis/Github/qudp-test/udp_connection -DCMAKE_INSTALL_PREFIX=/home/kinesis/Github/qudp-test/install/udp_connection
+[1.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kinesis/Github/qudp-test/build/udp_connection' returned '0': CMAKE_PREFIX_PATH=/home/kinesis/Github/qudp-test/install/udp_connection:/home/kinesis/colcon_ws/install/vision_test:/home/kinesis/colcon_ws/install/usb_camera:/home/kinesis/colcon_ws/install/turtlebot3_status_manager:/home/kinesis/colcon_ws/install/turtlebot3_simulations:/home/kinesis/colcon_ws/install/turtlebot3_fake_node:/home/kinesis/colcon_ws/install/turtlebot3_msgs:/home/kinesis/colcon_ws/install/turtlebot3_gazebo:/home/kinesis/colcon_ws/install/serial_test:/opt/ros/humble:/home/kinesis/colcon_ws/install/yolo_segmentation:/home/kinesis/colcon_ws/install/yolo_detection:/home/kinesis/colcon_ws/install/video_to_ros2_topic:/home/kinesis/colcon_ws/install/image_to_ros2_topic:/home/kinesis/colcon_ws/install/serial:/home/kinesis/colcon_ws/install/ros2_day_4_parameter_practice:/home/kinesis/colcon_ws/install/pan_tilt_camera:/home/kinesis/colcon_ws/install/my_cpp_pkg_test:/home/kinesis/colcon_ws/install/my_cpp_pkg:/home/kinesis/colcon_ws/install/image_recognition_msgs:/home/kinesis/colcon_ws/install/dual_fisheye_camera /usr/bin/cmake /home/kinesis/Github/qudp-test/udp_connection -DCMAKE_INSTALL_PREFIX=/home/kinesis/Github/qudp-test/install/udp_connection
+[1.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kinesis/Github/qudp-test/build/udp_connection': CMAKE_PREFIX_PATH=/home/kinesis/Github/qudp-test/install/udp_connection:/home/kinesis/colcon_ws/install/vision_test:/home/kinesis/colcon_ws/install/usb_camera:/home/kinesis/colcon_ws/install/turtlebot3_status_manager:/home/kinesis/colcon_ws/install/turtlebot3_simulations:/home/kinesis/colcon_ws/install/turtlebot3_fake_node:/home/kinesis/colcon_ws/install/turtlebot3_msgs:/home/kinesis/colcon_ws/install/turtlebot3_gazebo:/home/kinesis/colcon_ws/install/serial_test:/opt/ros/humble:/home/kinesis/colcon_ws/install/yolo_segmentation:/home/kinesis/colcon_ws/install/yolo_detection:/home/kinesis/colcon_ws/install/video_to_ros2_topic:/home/kinesis/colcon_ws/install/image_to_ros2_topic:/home/kinesis/colcon_ws/install/serial:/home/kinesis/colcon_ws/install/ros2_day_4_parameter_practice:/home/kinesis/colcon_ws/install/pan_tilt_camera:/home/kinesis/colcon_ws/install/my_cpp_pkg_test:/home/kinesis/colcon_ws/install/my_cpp_pkg:/home/kinesis/colcon_ws/install/image_recognition_msgs:/home/kinesis/colcon_ws/install/dual_fisheye_camera /usr/bin/cmake --build /home/kinesis/Github/qudp-test/build/udp_connection -- -j32 -l32
+[4.743s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kinesis/Github/qudp-test/build/udp_connection' returned '0': CMAKE_PREFIX_PATH=/home/kinesis/Github/qudp-test/install/udp_connection:/home/kinesis/colcon_ws/install/vision_test:/home/kinesis/colcon_ws/install/usb_camera:/home/kinesis/colcon_ws/install/turtlebot3_status_manager:/home/kinesis/colcon_ws/install/turtlebot3_simulations:/home/kinesis/colcon_ws/install/turtlebot3_fake_node:/home/kinesis/colcon_ws/install/turtlebot3_msgs:/home/kinesis/colcon_ws/install/turtlebot3_gazebo:/home/kinesis/colcon_ws/install/serial_test:/opt/ros/humble:/home/kinesis/colcon_ws/install/yolo_segmentation:/home/kinesis/colcon_ws/install/yolo_detection:/home/kinesis/colcon_ws/install/video_to_ros2_topic:/home/kinesis/colcon_ws/install/image_to_ros2_topic:/home/kinesis/colcon_ws/install/serial:/home/kinesis/colcon_ws/install/ros2_day_4_parameter_practice:/home/kinesis/colcon_ws/install/pan_tilt_camera:/home/kinesis/colcon_ws/install/my_cpp_pkg_test:/home/kinesis/colcon_ws/install/my_cpp_pkg:/home/kinesis/colcon_ws/install/image_recognition_msgs:/home/kinesis/colcon_ws/install/dual_fisheye_camera /usr/bin/cmake --build /home/kinesis/Github/qudp-test/build/udp_connection -- -j32 -l32
+[4.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kinesis/Github/qudp-test/build/udp_connection': CMAKE_PREFIX_PATH=/home/kinesis/Github/qudp-test/install/udp_connection:/home/kinesis/colcon_ws/install/vision_test:/home/kinesis/colcon_ws/install/usb_camera:/home/kinesis/colcon_ws/install/turtlebot3_status_manager:/home/kinesis/colcon_ws/install/turtlebot3_simulations:/home/kinesis/colcon_ws/install/turtlebot3_fake_node:/home/kinesis/colcon_ws/install/turtlebot3_msgs:/home/kinesis/colcon_ws/install/turtlebot3_gazebo:/home/kinesis/colcon_ws/install/serial_test:/opt/ros/humble:/home/kinesis/colcon_ws/install/yolo_segmentation:/home/kinesis/colcon_ws/install/yolo_detection:/home/kinesis/colcon_ws/install/video_to_ros2_topic:/home/kinesis/colcon_ws/install/image_to_ros2_topic:/home/kinesis/colcon_ws/install/serial:/home/kinesis/colcon_ws/install/ros2_day_4_parameter_practice:/home/kinesis/colcon_ws/install/pan_tilt_camera:/home/kinesis/colcon_ws/install/my_cpp_pkg_test:/home/kinesis/colcon_ws/install/my_cpp_pkg:/home/kinesis/colcon_ws/install/image_recognition_msgs:/home/kinesis/colcon_ws/install/dual_fisheye_camera /usr/bin/cmake --install /home/kinesis/Github/qudp-test/build/udp_connection
+[4.824s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(udp_connection)
+[4.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kinesis/Github/qudp-test/build/udp_connection' returned '0': CMAKE_PREFIX_PATH=/home/kinesis/Github/qudp-test/install/udp_connection:/home/kinesis/colcon_ws/install/vision_test:/home/kinesis/colcon_ws/install/usb_camera:/home/kinesis/colcon_ws/install/turtlebot3_status_manager:/home/kinesis/colcon_ws/install/turtlebot3_simulations:/home/kinesis/colcon_ws/install/turtlebot3_fake_node:/home/kinesis/colcon_ws/install/turtlebot3_msgs:/home/kinesis/colcon_ws/install/turtlebot3_gazebo:/home/kinesis/colcon_ws/install/serial_test:/opt/ros/humble:/home/kinesis/colcon_ws/install/yolo_segmentation:/home/kinesis/colcon_ws/install/yolo_detection:/home/kinesis/colcon_ws/install/video_to_ros2_topic:/home/kinesis/colcon_ws/install/image_to_ros2_topic:/home/kinesis/colcon_ws/install/serial:/home/kinesis/colcon_ws/install/ros2_day_4_parameter_practice:/home/kinesis/colcon_ws/install/pan_tilt_camera:/home/kinesis/colcon_ws/install/my_cpp_pkg_test:/home/kinesis/colcon_ws/install/my_cpp_pkg:/home/kinesis/colcon_ws/install/image_recognition_msgs:/home/kinesis/colcon_ws/install/dual_fisheye_camera /usr/bin/cmake --install /home/kinesis/Github/qudp-test/build/udp_connection
+[4.827s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection' for CMake module files
+[4.828s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection' for CMake config files
+[4.828s] Level 1:colcon.colcon_core.shell:create_environment_hook('udp_connection', 'cmake_prefix_path')
+[4.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/hook/cmake_prefix_path.ps1'
+[4.829s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/hook/cmake_prefix_path.dsv'
+[4.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/hook/cmake_prefix_path.sh'
+[4.831s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection/lib'
+[4.831s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection/bin'
+[4.831s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection/lib/pkgconfig/udp_connection.pc'
+[4.832s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection/lib/python3.10/site-packages'
+[4.832s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection/bin'
+[4.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/package.ps1'
+[4.833s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/package.dsv'
+[4.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/package.sh'
+[4.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/package.bash'
+[4.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/package.zsh'
+[4.836s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kinesis/Github/qudp-test/install/udp_connection/share/colcon-core/packages/udp_connection)
+[4.892s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(udp_connection)
+[4.893s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection' for CMake module files
+[4.893s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection' for CMake config files
+[4.893s] Level 1:colcon.colcon_core.shell:create_environment_hook('udp_connection', 'cmake_prefix_path')
+[4.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/hook/cmake_prefix_path.ps1'
+[4.894s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/hook/cmake_prefix_path.dsv'
+[4.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/hook/cmake_prefix_path.sh'
+[4.895s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection/lib'
+[4.895s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection/bin'
+[4.895s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection/lib/pkgconfig/udp_connection.pc'
+[4.896s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection/lib/python3.10/site-packages'
+[4.896s] Level 1:colcon.colcon_core.environment:checking '/home/kinesis/Github/qudp-test/install/udp_connection/bin'
+[4.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/package.ps1'
+[4.897s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/package.dsv'
+[4.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/package.sh'
+[4.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/package.bash'
+[4.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/kinesis/Github/qudp-test/install/udp_connection/share/udp_connection/package.zsh'
+[4.900s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kinesis/Github/qudp-test/install/udp_connection/share/colcon-core/packages/udp_connection)
+[4.900s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.900s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.901s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.901s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.910s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.910s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.911s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.932s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.933s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kinesis/Github/qudp-test/install/local_setup.ps1'
+[4.935s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kinesis/Github/qudp-test/install/_local_setup_util_ps1.py'
+[4.936s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kinesis/Github/qudp-test/install/setup.ps1'
+[4.938s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kinesis/Github/qudp-test/install/local_setup.sh'
+[4.939s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kinesis/Github/qudp-test/install/_local_setup_util_sh.py'
+[4.940s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kinesis/Github/qudp-test/install/setup.sh'
+[4.942s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kinesis/Github/qudp-test/install/local_setup.bash'
+[4.942s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kinesis/Github/qudp-test/install/setup.bash'
+[4.944s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kinesis/Github/qudp-test/install/local_setup.zsh'
+[4.945s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kinesis/Github/qudp-test/install/setup.zsh'

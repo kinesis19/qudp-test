@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+be9e0adf71f67ef8405fa56865b31206 CMakeFiles/udp_connection_uninstall
+7b76f35b45dc30434667e5ad5306f2dd include/udp_connection/moc_main_window.cpp
+0082990376f03893045715c1b530ca85 include/udp_connection/moc_qnode.cpp
+221c880d8791d8a218d931a6ef803e32 ui_mainwindow.h

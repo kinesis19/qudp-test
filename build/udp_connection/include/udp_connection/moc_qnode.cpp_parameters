@@ -1,0 +1,5 @@
+-I/home/kinesis/Github/qudp-test/udp_connection
+-I/home/kinesis/Github/qudp-test/build/udp_connection
+-o
+/home/kinesis/Github/qudp-test/build/udp_connection/include/udp_connection/moc_qnode.cpp
+/home/kinesis/Github/qudp-test/udp_connection/include/udp_connection/qnode.hpp
