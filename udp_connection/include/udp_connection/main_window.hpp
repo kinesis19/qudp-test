@@ -14,6 +14,7 @@
 *****************************************************************************/
 
 #include <QMainWindow>
+#include <QTimer>  // QTimer 헤더 추가
 #include "QIcon"
 #include "qnode.hpp"
 #include "ui_mainwindow.h"

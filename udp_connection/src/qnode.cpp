@@ -12,13 +12,14 @@
 
 #include "../include/udp_connection/qnode.hpp"
 
-QNode::QNode()
+QNode::QNode() : udpSocket(new QUdpSocket(this)), receiverPort(12345)
 {
   int argc = 0;
   char** argv = NULL;
   rclcpp::init(argc, argv);
   node = rclcpp::Node::make_shared("udp_connection");
   this->start();
+  setupSocket();
 }
 
 QNode::~QNode()
