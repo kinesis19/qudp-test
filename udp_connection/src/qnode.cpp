@@ -7,6 +7,10 @@ QNode::QNode() : udpSocket(new QUdpSocket(this)), receiverPort(12345)
   rclcpp::init(argc, argv);
   node = rclcpp::Node::make_shared("udp_connection");
   this->start();
+
+
+  sub_psd_left_ = node->create_subscription<std_msgs::msg::Int32>("/adc_value_left", 10, std::bind(&QNode::callbackPSDValueLeft, this, std::placeholders::_1));
+
   setupSocket();
 }
 
@@ -54,4 +58,16 @@ void QNode::setReceiverIPAddress(const std::string& ipAddress) {
 void QNode::sendUDPMessage(const std::string& message) {
   QByteArray data = QByteArray::fromStdString(message);
   udpSocket->writeDatagram(data, receiverAddress, receiverPort);
+}
+
+void QNode::callbackPSDValueLeft(const std_msgs::msg::Int32::SharedPtr msg) 
+{
+  // ROS 2 데이터(Int64)를 QString으로 변환
+  QString dataToSend = QString::number(msg->data);
+
+  // UDP를 통해 데이터 송신
+  QByteArray data = dataToSend.toUtf8();
+  udpSocket->writeDatagram(data, receiverAddress, receiverPort);
+
+  RCLCPP_INFO(node->get_logger(), "Sent data: %s", dataToSend.toStdString().c_str());
 }

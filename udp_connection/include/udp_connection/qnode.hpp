@@ -6,6 +6,7 @@
 #include <QThread>
 #include <QUdpSocket>
 #include <QString>
+#include <std_msgs/msg/int32.hpp>
 
 class QNode : public QThread
 {
@@ -21,11 +22,19 @@ protected:
   void run();
 
 private:
+
   std::shared_ptr<rclcpp::Node> node;
   QUdpSocket* udpSocket;
   QHostAddress receiverAddress;
   quint16 receiverPort;
+
+  // 퍼블리셔, 서브스크라이버
+  rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr sub_psd_left_;
+
+
+  // 메서드
   void setupSocket();
+  void callbackPSDValueLeft(const std_msgs::msg::Int32::SharedPtr msg);
 
 Q_SIGNALS:
   void rosShutDown();
