@@ -20,6 +20,9 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWi
 
   qnode = new QNode();
 
+  QString ipAddress = getLocalIPAddress();
+  ui->localIPAddressLabel->setText("IP Address: " + ipAddress);
+
    // 슬롯 연결
   connect(ui->setIPAddressButton, &QPushButton::clicked, this, &MainWindow::on_setIPAddress_clicked);
   connect(ui->sendButton, &QPushButton::clicked, this, &MainWindow::on_sendButton_clicked);
@@ -28,6 +31,7 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWi
   // connect(qnode, &QNode::messageReceived, this, [this](const QString& msg) {
   //   ui->receivedMessageLabel->setText(msg);
   // });
+  
   connect(qnode, &QNode::messageReceived, this, [this](const QString& msg) {
   if (msg == "PONG") {
     updateConnectionStatus(true);  // 연결 성공 시 업데이트
@@ -100,4 +104,15 @@ void MainWindow::on_sendButton_clicked() {
   if (!message.isEmpty()) {
     qnode->sendUDPMessage(message.toStdString());
   }
+}
+
+QString MainWindow::getLocalIPAddress() {
+    QList<QHostAddress> addrList = QNetworkInterface::allAddresses();
+    for (const QHostAddress &addr : addrList) {
+        // IPv4 주소만 선택하고, 로컬호스트(127.0.0.1)는 제외
+        if (addr.protocol() == QAbstractSocket::IPv4Protocol && addr != QHostAddress::LocalHost) {
+            return addr.toString();
+        }
+    }
+    return "Unknown";  // 유효한 IPv4 주소를 찾지 못한 경우
 }

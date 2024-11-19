@@ -14,7 +14,9 @@
 *****************************************************************************/
 
 #include <QMainWindow>
-#include <QTimer>  // QTimer 헤더 추가
+#include <QTimer>
+#include <QNetworkInterface>
+#include <QString>
 #include "QIcon"
 #include "qnode.hpp"
 #include "ui_mainwindow.h"
@@ -42,6 +44,7 @@ private:
   Ui::MainWindowDesign* ui;
   void closeEvent(QCloseEvent* event);
   void updateConnectionStatus(bool connected);  // 연결 상태 업데이트 함수 추가
+  QString getLocalIPAddress();
 };
 
 #endif  // udp_connection_MAIN_WINDOW_H
