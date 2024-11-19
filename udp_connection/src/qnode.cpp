@@ -1,15 +1,3 @@
-/**
- * @file /src/qnode.cpp
- *
- * @brief Ros communication central!
- *
- * @date August 2024
- **/
-
-/*****************************************************************************
-** Includes
-*****************************************************************************/
-
 #include "../include/udp_connection/qnode.hpp"
 
 QNode::QNode() : udpSocket(new QUdpSocket(this)), receiverPort(12345)
